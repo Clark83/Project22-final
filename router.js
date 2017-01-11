@@ -6,12 +6,12 @@ function router ($routeProvider) {
     .when("/people", {
         templateUrl : "/templates/api.html"
     })
-    // .when("/red", {
-    //     templateUrl : "red.htm"
-    // })
-    // .when("/green", {
-    //     templateUrl : "green.htm"
-    // })
+     .when("/contacts", {
+       templateUrl : "/templates/contacts.js"
+     })
+     .when("/plan", {
+        templateUrl : "/templates/plan.html"
+     })
     // .when("/blue", {
     //     templateUrl : "blue.htm"
     };
