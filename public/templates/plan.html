@@ -1,0 +1,29 @@
+
+  <div class='center'>
+<h2 class= 'pics'><img src="/templates/plan.jpg" height="200" width="200"></h2>
+
+<html>
+  <head>
+    <script>
+      $(document).ready(function(){
+        $('.add_more').click(function(e){
+          e.preventDefault();
+          $(this).before("<input name='file[]' type='file'/>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form enctype="multipart/form-data" action="upload.php" method="post">
+      <input name="file[]" type="file" />
+      <button class="add_more">Add More Files</button>
+      <input type="submit" value="Upload File" id="upload"/>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+</div>
